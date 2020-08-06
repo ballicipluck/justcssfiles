@@ -1,0 +1,73 @@
+body{
+    font-family: salesforce-sans,"Helvetica Neue",helvetica,arial,sans-serif!important;   
+    user-select: none;
+    background-color: rgba(233,233,255);
+}
+.nav-bar-div{
+    z-index: 50;
+    color: white!important;
+    font-weight: bold;
+    display: inline-flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 0px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(233,233,255);
+}
+.nav-bar-child{
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: rgba(120,100,250,0.4);
+    width: 100%;
+    text-align: center;
+    color: rgba(5,5,5,0.7);
+    border-left: 2px solid rgba(233,233,255);
+    border-right: 2px solid rgba(233,233,255);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-search{
+    z-index: 51;
+    background-color: cadetblue;
+    position: absolute;
+    flex-shrink: 2;
+    border-radius: 50%;
+    width:30px;
+    top: 15px;
+    height: 30px;
+    left: 50%;
+    margin-bottom: -20px;
+    margin-left: -35px;
+    border: 5px rgba(233,233,255) solid;
+}
+
+
+.nav-bar-child:hover{
+    background-color: rgba(167,155,252,1);
+    transition-duration: 0.19s;
+    -moz-box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    color: white;
+
+}
+.nav-search:hover{
+    box-shadow: none;
+}
+.nav-radio:checked + label{
+    background-color: rgba(153,139,251);
+    -moz-box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    color: white;
+}
+.nav-radio:checked + .nav-search{
+    box-shadow: none;
+    background-color: rgb(255,128,128);
+}
+.nav-radio{
+    display: none;
+}
